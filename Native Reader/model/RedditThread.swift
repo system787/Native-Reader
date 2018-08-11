@@ -11,26 +11,26 @@ import Foundation
 class RedditThread : NSObject {
     //MARK: Properties
     @objc dynamic var author: String
-    var domain: String
-    var permalink: String
-    var selfText: String?
+    @objc dynamic var domain: String
+    @objc dynamic var permalink: String
+    @objc dynamic var selfText: String?
     @objc dynamic var subreddit: String
-    var subredditId: String
+    @objc dynamic var subredditId: String
     @objc dynamic var title: String
-    var url: String
+    @objc dynamic var url: String
     
-    var numberOfComments: Int
-    var score: Int
+    @objc dynamic var numberOfComments: Int
+    @objc dynamic var score: Int
     
-    var isHidden: Bool
-    var isSelfPost: Bool
-    var isLiked: Bool?
-    var isNSFW: Bool
-    var isSaved: Bool
+    @objc dynamic var isHidden: Bool
+    @objc dynamic var isSelfPost: Bool
+    @objc dynamic var isLiked: Bool
+    @objc dynamic var isNSFW: Bool
+    @objc dynamic var isSaved: Bool
     
     
     //MARK: Initialization
-    init(author: String, domain: String, permalink: String, selfText: String?, subreddit: String, subredditId: String, title: String, url: String, numberOfComments: Int, score: Int, isHidden: Bool, isSelfPost: Bool, isLiked: Bool?, isNSFW: Bool, isSaved: Bool) {
+    init(author: String, domain: String, permalink: String, selfText: String?, subreddit: String, subredditId: String, title: String, url: String, numberOfComments: Int, score: Int, isHidden: Bool, isSelfPost: Bool, isLiked: Bool, isNSFW: Bool, isSaved: Bool) {
         
         self.author = author
         self.domain = domain
