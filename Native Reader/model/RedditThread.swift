@@ -8,15 +8,15 @@
 
 import Foundation
 
-class RedditThread {
+class RedditThread : NSObject {
     //MARK: Properties
-    var author: String
+    @objc dynamic var author: String
     var domain: String
     var permalink: String
     var selfText: String?
-    var subreddit: String
+    @objc dynamic var subreddit: String
     var subredditId: String
-    var title: String
+    @objc dynamic var title: String
     var url: String
     
     var numberOfComments: Int
